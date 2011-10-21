@@ -1,4 +1,4 @@
-package projecteuler.p12;
+package projecteuler.p2;
 
 public class Main {
 
