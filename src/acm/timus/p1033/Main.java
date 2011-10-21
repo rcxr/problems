@@ -3,6 +3,7 @@ package acm.timus.p1033;
 import java.util.Scanner;
 
 /**
+ * Timus Online Judge
  * Problem 1033. Labyrinth
  * http://acm.timus.ru/problem.aspx?space=1&num=1033
  * 
@@ -18,12 +19,12 @@ public class Main {
     int n = Integer.valueOf(in.nextLine());
 
     char[][] labyrinth = new char[n][];
-    // Reading labyrinth
+    // Reading the labyrinth
     for (int i = 0; i < n; i++) {
       labyrinth[i] = in.nextLine().toCharArray();
     }
-    // Matrix that records the visits
-    // for the empty cells
+    // Matrix that records the "visit" status
+    // of the cells
     boolean[][] visited = new boolean[n][n];
     // We are going to kick-off a recursive
     // algorithm on the upper-left and down-right
@@ -40,11 +41,12 @@ public class Main {
   }
 
   /**
-   * This algorithm is going to attempt to visit a cell
-   * If the cell is a monolith or out of bounds this means
-   * that we have crossed a wall, we count it and return
-   * If the cell is not a wall and not visited, we visited
-   * and move to all the cell's neighbors
+   * This algorithm is going to attempt to visit the cell.
+   * If the cell is a monolith or is out of bounds this means
+   * that we have crossed a wall, we increase the wall counter
+   * and return.
+   * If the cell is not a monolith and has not been visited
+   * then we visit it and move on to all it neighbors.
    * If the cell has already been visited then there is nothing
    * else to do, we simply go back.
    * @param labyrinth The labyrinth
