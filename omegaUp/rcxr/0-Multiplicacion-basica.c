@@ -1,6 +1,7 @@
+// https://omegaup.com/arena/problem/0-Multiplicacion-basica
+
 #include <stdio.h>
 
-// https://omegaup.com/arena/problem/0-Multiplicacion-basica
 int main() {
   int num1, num2;
 
