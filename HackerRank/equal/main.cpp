@@ -1,51 +1,62 @@
 #include <vector>
 #include <unordered_map>
-#include <climits>
 #include <algorithm>
 #include <iostream>
 
 using namespace std;
 
 int minSteps(int delta, unordered_map<int, int>& cache) {
-  if (delta < 0) {
-    return INT_MAX;
-  }
   if (cache.end() != cache.find(delta)) {
     return cache[delta];
   }
-  vector<int> results = {
-    minSteps(delta - 1, cache),
-    minSteps(delta - 3, cache),
-    minSteps(delta - 5, cache)
-  };
-  cache[delta] = *min_element(results.begin(), results.begin()) + 1;
+
+  vector<int> results;
+  if (5 < delta) {
+    results.push_back(minSteps(delta - 5, cache));
+  }
+  if (2 < delta) {
+    results.push_back(minSteps(delta - 2, cache));
+  }
+  results.push_back(minSteps(delta - 1, cache));
+
+  cache[delta] = *min_element(results.begin(), results.end()) + 1;
   return cache[delta];
 }
 
-int equal(vector<int> const& arr, unordered_map<int, int>& cache) {
-  auto min = *min_element(arr.begin(), arr.end());
+int equal(vector<int> const& choco, unordered_map<int, int>& cache, int offset) {
+  auto min = *min_element(choco.begin(), choco.end());
   auto result = 0;
-  for (auto v : arr) {
-    result += minSteps(v - min, cache);
+  for (auto c : choco) {
+    result += minSteps(c - min + offset, cache);
   }
   return result;
+}
+
+int equal(vector<int> const& choco, unordered_map<int, int>& cache) {
+  vector<int > results = {
+    equal(choco, cache, 0),
+    equal(choco, cache, 1),
+    equal(choco, cache, 2),
+    equal(choco, cache, 3),
+    equal(choco, cache, 4)
+  };
+  return *min_element(results.begin(), results.end());
 }
 
 int main() {
   unordered_map<int, int> cache;
   cache[0] = 0;
-  cache[1] = cache[3] = cache[5] = 1;
+  cache[1] = cache[2] = cache[5] = 1;
 
-  int t;
-  cin >> t;
-  while (0 < t--) {
-    int n;
+  int tests, n;
+  cin >> tests;
+  while (0 < tests--) {
     cin >> n;
-    vector<int> arr(n);
+    vector<int> choco(n);
     while (0 < n--) {
-      cin >> arr[n];
+      cin >> choco[n];
     }
-    cout << equal(arr, cache) << endl;
+    cout << equal(choco, cache) << endl;
   }
 
   return 0;
