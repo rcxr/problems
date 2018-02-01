@@ -28,7 +28,14 @@ int getTotalX(vector<int> as, vector<int> bs) {
   if (divisor % multiple) {
     return 0;
   }
-  return divisor / multiple - 1;
+  auto n = divisor / multiple;
+  auto count = 0;
+  for (auto i = 1; i <= n; ++i) {
+    if (0 == n % i) {
+      ++count;
+    }
+  }
+  return count;
 }
 
 int main() {
