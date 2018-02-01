@@ -26,7 +26,7 @@ int main() {
   int k;
   cin >> n >> k;
   vector<int> ar(n);
-  for(auto i = 0; i < n; ++i){
+  for (auto i = 0; i < n; ++i) {
      cin >> ar[i];
   }
   cout << divisibleSumPairs(k, ar) << endl;
