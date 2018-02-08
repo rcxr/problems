@@ -17,8 +17,7 @@ tests: clean build
 	./main.exe < in/input00.txt > out/output00.txt
 	./main.exe < in/input01.txt > out/output01.txt
 	./main.exe < in/input02.txt > out/output02.txt
-	./main.exe < in/input10.txt > out/output10.txt
-	./main.exe < in/input14.txt > out/output14.txt
 	diff -r expected out $(DIFF_OPTIONS) > logs/diff.log
+	./main.exe < in/input02.txt > out/output02.txt
 clean: tests_cleanup
 	rm -f main.exe

@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/divisible-sum-pairs
+
 #include <vector>
 #include <iostream>
 

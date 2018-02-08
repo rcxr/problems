@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/equal
+
 #include <vector>
 #include <unordered_map>
 #include <algorithm>

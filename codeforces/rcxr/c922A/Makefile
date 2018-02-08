@@ -17,8 +17,13 @@ tests: clean build
 	./main.exe < in/input00.txt > out/output00.txt
 	./main.exe < in/input01.txt > out/output01.txt
 	./main.exe < in/input02.txt > out/output02.txt
-	./main.exe < in/input10.txt > out/output10.txt
-	./main.exe < in/input14.txt > out/output14.txt
+	./main.exe < in/input03.txt > out/output03.txt
+	./main.exe < in/input04.txt > out/output04.txt
+	./main.exe < in/input05.txt > out/output05.txt
+	./main.exe < in/input06.txt > out/output06.txt
+	./main.exe < in/input07.txt > out/output07.txt
+	./main.exe < in/input08.txt > out/output08.txt
+	./main.exe < in/input07.txt > out/output09.txt
 	diff -r expected out $(DIFF_OPTIONS) > logs/diff.log
 clean: tests_cleanup
 	rm -f main.exe
