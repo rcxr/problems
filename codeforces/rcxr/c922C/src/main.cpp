@@ -3,9 +3,9 @@
 #include <iostream>
 #include <unordered_map>
 
-void process(std::unordered_map<long, long>& primes, long n) {
+void process(std::unordered_map<unsigned long, unsigned long>& primes, unsigned long n) {
   for (auto prime : primes) {
-    for (auto i = 0; i < prime.second; ++i) {
+    for (unsigned long i = 0; i < prime.second; ++i) {
       if (n % prime.first) {
         break;
       }
@@ -22,18 +22,18 @@ void process(std::unordered_map<long, long>& primes, long n) {
 }
 
 int main() {
-  long n, k;
+  unsigned long n, k;
   std::cin >> n >> k;
 
-  std::unordered_map<long, long> primes;
-  for (long i = 2; i <= k; ++i) {
+  std::unordered_map<unsigned long, unsigned long> primes;
+  for (unsigned long i = 2; i <= k; ++i) {
     process(primes, i);
   }
 
   n++;
 
   for (auto prime : primes) {
-    for (auto i = 0; i < prime.second; ++i) {
+    for (unsigned long i = 0; i < prime.second; ++i) {
       if (n % prime.first) {
         std::cout << "No";
         return 0;
