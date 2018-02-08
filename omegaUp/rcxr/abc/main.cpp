@@ -1,10 +1,6 @@
 // https://omegaup.com/arena/problem/abc
 
-#include <iostream>
-#include <stdio.h>
-#include <math.h>
-
-using namespace std;
+#include <bits/stdc++.h>
 
 int lbs(unsigned num) {
     unsigned mask = 1;
@@ -17,11 +13,18 @@ int lbs(unsigned num) {
 }
 
 int main() {
-  for (unsigned i = 0; i < 256; ++i) {
-    if (i % 16 == 0) {
-      cout << endl;
-    }
-    cout << lbs(i) << ", ";
-  }
+  std::vector<int> abc;
+  int i;
+  std::cin >> i; abc.push_back(i);
+  std::cin >> i; abc.push_back(i);
+  std::cin >> i; abc.push_back(i);
+
+  std::sort(abc.begin(), abc.end());
+
+  char c;
+  std::cin >> c; std::cout << abc[c - 'A'] << " ";
+  std::cin >> c; std::cout << abc[c - 'A'] << " ";
+  std::cin >> c; std::cout << abc[c - 'A'] << " ";
+
   return 0;
 }
