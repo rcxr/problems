@@ -1,20 +1,19 @@
 // http://codeforces.com/contest/922/problem/C
 
 #include <iostream>
-#include <unordered_map>
 
 int main() {
-  long n, k;
+  long long n, k;
   std::cin >> n >> k;
-  ++n;
 
-  for (long i = 2; i <= k; ++i) {
-    if (n % i) {
-      std::cout << "No";
-      return 0;
+  bool valid = true;
+  for (long long i = 2; i <= k; ++i) {
+    if (0 != ((n + 1) % i)) {
+      valid = false;
+      break;
     }
   }
 
-  std::cout << "Yes";
+  std::cout << (valid ? "Yes" : "No");
   return 0;
 }
