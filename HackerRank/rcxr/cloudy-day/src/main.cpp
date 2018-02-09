@@ -55,7 +55,7 @@ long maxUtility(
         utility += utilityIt->second;
       }
       else if (1u == activeClouds.size()) {
-        auto cloudId = *(activeClouds.begin());
+        auto cloudId = *activeClouds.begin();
         if (cloudUtilities.end() == cloudUtilities.find(cloudId)) {
           cloudUtilities[cloudId] = 0l;
         }
