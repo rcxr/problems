@@ -16,7 +16,7 @@ std::map<int, long> calculateUtilities(std::vector<int> const& townXs, std::vect
 }
 
 void addCloudTransition(std::map<int, std::vector<unsigned>>& cloudTransitions, int x, unsigned cloudId) {
-  if (cloudTransitions.end() != cloudTransitions.find(x)) {
+  if (cloudTransitions.end() == cloudTransitions.find(x)) {
     cloudTransitions[x] = std::vector<unsigned>();
   }
   cloudTransitions[x].push_back(cloudId);

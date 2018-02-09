@@ -43,6 +43,12 @@ tests: clean build
 	bin/main.exe < in/input25.txt > out/output25.txt
 	bin/main.exe < in/input26.txt > out/output26.txt
 	bin/main.exe < in/input27.txt > out/output27.txt
+	bin/main.exe < in/input28.txt > out/output28.txt
+	bin/main.exe < in/input29.txt > out/output29.txt
+	bin/main.exe < in/input30.txt > out/output30.txt
+	bin/main.exe < in/input31.txt > out/output31.txt
+	bin/main.exe < in/input32.txt > out/output32.txt
+	bin/main.exe < in/input33.txt > out/output33.txt
 	diff -r expected out $(DIFF_OPTIONS) > logs/diff.log
 clean: tests_cleanup
 	echo "bin cleanup"
