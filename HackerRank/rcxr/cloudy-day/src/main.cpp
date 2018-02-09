@@ -72,6 +72,7 @@ long maxUtility(
         }
         cloudUtilities[cloudId] += utilityIt->second;
       }
+      ++utilityIt;
     }
 
     // Determine if we can short-circuit
@@ -86,11 +87,18 @@ long maxUtility(
     ++utilityIt;
   }
 
-  // Return the max utility (normal utility + max cloud utility)
+  // If there are no cloud utilities, return the normal utility
+  if (cloudUtilities.empty()) {
+    return utility;
+  }
+
+  // Find the max cloud utility
   auto max = max_element(cloudUtilities.begin(), cloudUtilities.end(), [] (std::pair<unsigned, long> const& a, std::pair<unsigned, long> const& b) {
     return a.second < b.second;
   });
-  return utility + (cloudUtilities.end() == max ? 0l : max->second);
+
+  // Return the utility (normal utility + max cloud utility)
+  return utility + max->second;
 }
 
 int main() {
