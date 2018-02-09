@@ -49,23 +49,12 @@ long maxUtility(
   auto utility = 0l;
 
   for (auto cloudTransition : cloudTransitions) {
-    // Toggle the cloud active states for this position
-    for (auto cloudId : cloudTransition.second) {
-      auto activeCloudIt = activeClouds.find(cloudId);
-      if (activeClouds.end() == activeCloudIt) {
-        // If the cloud was not active, activate it
-        activeClouds.insert(cloudId);
-      } else {
-        // If the cloud was active, deactivate it
-        activeClouds.erase(activeCloudIt);
-      }
-    }
-
     // Consume utilities
-    while (utilities.end() != utilityIt && utilityIt->first <= cloudTransition.first) {
+    while (utilities.end() != utilityIt && utilityIt->first < cloudTransition.first) {
       if (activeClouds.empty()) {
         utility += utilityIt->second;
-      } else if (1u == activeClouds.size()) {
+      }
+      else if (1u == activeClouds.size()) {
         auto cloudId = *(activeClouds.begin());
         if (cloudUtilities.end() == cloudUtilities.find(cloudId)) {
           cloudUtilities[cloudId] = 0l;
@@ -78,6 +67,18 @@ long maxUtility(
     // Determine if we can short-circuit
     if (utilities.end() == utilityIt) {
       break;
+    }
+
+    // Toggle the cloud active states for this position
+    for (auto cloudId : cloudTransition.second) {
+      auto activeCloudIt = activeClouds.find(cloudId);
+      if (activeClouds.end() == activeCloudIt) {
+        // If the cloud was not active, activate it
+        activeClouds.insert(cloudId);
+      } else {
+        // If the cloud was active, deactivate it
+        activeClouds.erase(activeCloudIt);
+      }
     }
   }
 

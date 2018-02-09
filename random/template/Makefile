@@ -1,4 +1,4 @@
-DIFF_OPTIONS=-y --strip-trailing-cr -w
+DIFF_OPTIONS=-y -w --strip-trailing-cr --suppress-common-lines
 build:
 	echo "g++"
 	mkdir bin -p
