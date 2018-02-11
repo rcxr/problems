@@ -4,7 +4,7 @@
 
 class Container {
 public:
-  Container(int size) : array(size), next(0) {}
+  Container(int size) : next(0), array(size) {}
 
   void push(int value) {
     array[next] = value;
@@ -30,8 +30,7 @@ private:
   }
 
   int index(int i) const {
-    auto index = i % array.size();
-    return index < 0 ? index + array.size() : index;
+    return (i + array.size()) % array.size();
   }
 };
 
@@ -59,7 +58,7 @@ int sumGrid(std::vector<std::vector<int>> const& grid, int rows, int cols) {
 
 int findMinStripPartial(std::vector<int> const& array, int k) {
   Container container(k);
-  int min = INT_MAX;
+  auto min = INT_MAX;
   for (auto value : array) {
     container.push(value);
     auto partialMin = container.min();
@@ -101,6 +100,6 @@ int main() {
   int rows, cols, k;
   std::cin >> rows >> cols >> k;
   auto grid = readGrid(rows, cols);
-  std::cout << (sumGrid(grid, rows, cols) - findMinStrip(grid, rows, cols, k));
+  std::cout << sumGrid(grid, rows, cols) - findMinStrip(grid, rows, cols, k);
   return 0;
 }
