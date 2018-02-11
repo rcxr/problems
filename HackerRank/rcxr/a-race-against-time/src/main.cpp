@@ -106,7 +106,7 @@ int main() {
     });
 
   // Print the best cost including the fixed cost of traveling n positions
-  std::cout << (min->second + n);
+  std::cout << min->second + n;
 
   return 0;
 }
