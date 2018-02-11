@@ -17,6 +17,7 @@ tests: clean build
 	mkdir out logs -p
 	bin/main.exe < in/input00.txt > out/output00.txt
 	bin/main.exe < in/input01.txt > out/output01.txt
+	bin/main.exe < in/input02.txt > out/output02.txt
 	diff -r expected out $(DIFF_OPTIONS) > logs/diff.log
 clean: tests_cleanup
 	echo "bin cleanup"

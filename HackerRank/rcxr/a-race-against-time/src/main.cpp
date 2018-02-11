@@ -4,9 +4,9 @@
 #include <unordered_map>
 
 struct Student {
-  Student(int height, int cost) : height(height), cost(cost) {}
+  Student(int height, long cost) : height(height), cost(cost) {}
   int const height;
-  int const cost;
+  long const cost;
 };
 
 std::vector<Student> readStudents(int n) {
@@ -14,7 +14,7 @@ std::vector<Student> readStudents(int n) {
   for (auto i = 0; i < n; ++i) {
     std::cin >> heights[i];
   }
-  std::vector<int> costs(n);
+  std::vector<long> costs(n);
   for (auto i = 0; i < n; ++i) {
     std::cin >> costs[i];
   }
@@ -26,21 +26,28 @@ std::vector<Student> readStudents(int n) {
   return students;
 }
 
-void fillCosts(std::vector<std::unordered_map<int, int>>& costs, std::vector<Student> const& students) {
+void fillCosts(std::vector<std::unordered_map<int, long>>& costs, std::vector<Student> const& students) {
   for (auto i = 0u; i < students.size(); ++i) {
     auto& student = students[i];
     auto& nextCosts = costs[i + 1];
-    for (auto& prevCost : costs[i]) {
-      auto height = prevCost.first;
-      auto cost = prevCost.second;
+    for (auto& prev : costs[i]) {
+      auto prevHeight = prev.first;
+      auto prevCost = prev.second;
+      auto givingCost = std::abs(prevHeight - student.height) + student.cost + prevCost;
+
       // Give baton
-      auto givingCost = std::abs(height - student.height) + student.cost;
-      if (nextCosts.end() == nextCosts.find(student.height) || cost + givingCost < nextCosts[student.height]) {
-        nextCosts[student.height] = cost + givingCost;
+      if (nextCosts.end() == nextCosts.find(student.height) || givingCost < nextCosts[student.height]) {
+        nextCosts[student.height] = givingCost;
       }
+
+      // Giving is required if student is taller
+      if (prevHeight < student.height) {
+        continue;
+      }
+
       // Do not give baton
-      if (student.height <= height && (nextCosts.end() == nextCosts.find(height) || cost < nextCosts[height])) {
-        nextCosts[height] = cost;
+      if (nextCosts.end() == nextCosts.find(prevHeight) || prevCost < nextCosts[prevHeight]) {
+        nextCosts[prevHeight] = prevCost;
       }
     }
   }
@@ -52,7 +59,7 @@ int main() {
   std::cin >> n;
 
   // Create cost tables for every position in the track
-  std::vector<std::unordered_map<int, int>> costs(n);
+  std::vector<std::unordered_map<int, long>> costs(n);
 
   // The cost table for the start position is known: { { Mason's height, 0 } }
   int masonHeight;
@@ -66,15 +73,15 @@ int main() {
   fillCosts(costs, students);
 
   // Find the best cost of the goal position
-  auto max = std::min_element(
+  auto min = std::min_element(
     costs[n - 1].begin(),
     costs[n - 1].end(),
-    [](std::pair<int, int> const& a, std::pair<int, int> const& b) {
+    [](std::pair<int, long> const& a, std::pair<int, long> const& b) {
       return a.second < b.second;
     });
 
   // Print the best cost including the fixed cost of traveling n positions
-  std::cout << (max->second + n);
+  std::cout << (min->second + n);
 
   return 0;
 }
