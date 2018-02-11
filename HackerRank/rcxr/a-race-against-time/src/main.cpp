@@ -1,7 +1,6 @@
 // https://www.hackerrank.com/contests/w36/challenges/a-race-against-time
 
 #include "bits/stdc++.h"
-#include <unordered_map>
 
 struct Student {
   Student(int height, long cost) : height(height), cost(cost) {}
@@ -26,13 +25,39 @@ std::vector<Student> readStudents(int n) {
   return students;
 }
 
-void fillCosts(std::vector<std::unordered_map<int, long>>& costs, std::vector<Student> const& students) {
+void fillCosts(std::vector<std::map<int, long>>& costs, std::vector<Student> const& students) {
   for (auto i = 0u; i < students.size(); ++i) {
     auto& student = students[i];
     auto& nextCosts = costs[i + 1];
+
+    // Let's keep track of the best running cost
+    auto bestHeight = INT_MAX;
+    auto bestCost = LONG_MAX;
+    // Let's discard costs that are dominated by the best running cost
+    for (auto costIt = costs[i].begin(); costs[i].end() != costIt; ++costIt) {
+      if (LONG_MAX == bestCost) {
+        bestHeight = costIt->first;
+        bestCost = costIt->second;
+        continue;
+      }
+      auto hypoteticalCost = bestCost + abs(costIt->first - bestHeight);
+      if (hypoteticalCost <= costIt->second) {
+        costIt->second = LONG_MAX;
+      } else {
+        bestHeight = costIt->first;
+        bestCost = costIt->second;
+      }
+    }
+
     for (auto& prev : costs[i]) {
       auto prevHeight = prev.first;
       auto prevCost = prev.second;
+
+      // Short-circuit if cost is dominated
+      if (LONG_MAX == prevCost) {
+        continue;
+      }
+
       auto givingCost = std::abs(prevHeight - student.height) + student.cost + prevCost;
 
       // Give baton
@@ -59,7 +84,7 @@ int main() {
   std::cin >> n;
 
   // Create cost tables for every position in the track
-  std::vector<std::unordered_map<int, long>> costs(n);
+  std::vector<std::map<int, long>> costs(n);
 
   // The cost table for the start position is known: { { Mason's height, 0 } }
   int masonHeight;
