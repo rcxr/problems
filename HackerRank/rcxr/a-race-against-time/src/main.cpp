@@ -25,36 +25,42 @@ std::vector<Student> readStudents(int n) {
   return students;
 }
 
-void fillCosts(std::vector<std::map<int, long>>& costs, std::vector<Student> const& students) {
+std::map<int, long> calculateCosts(std::map<int, long> costs, std::vector<Student> const& students) {
   for (auto i = 0u; i < students.size(); ++i) {
     auto& student = students[i];
-    auto& nextCosts = costs[i + 1];
+    std::map<int, long> nextCosts;
+    std::vector<bool> valid(costs.size(), true);
 
     // Let's keep track of the best running cost
-    auto bestHeight = INT_MAX;
-    auto bestCost = LONG_MAX;
+    int bestHeight;
+    long bestCost;
+    auto index = costs.size() - 1;
+
     // Let's discard costs that are dominated by the best running cost
-    for (auto costIt = costs[i].begin(); costs[i].end() != costIt; ++costIt) {
-      if (LONG_MAX == bestCost) {
+    for (auto costIt = costs.rbegin(); costs.rend() != costIt; ++costIt) {
+      if (costs.size() - 1 == index) {
+        --index;
         bestHeight = costIt->first;
         bestCost = costIt->second;
         continue;
       }
       auto hypoteticalCost = bestCost + abs(costIt->first - bestHeight);
       if (hypoteticalCost <= costIt->second) {
-        costIt->second = LONG_MAX;
+        valid[index] = false;
       } else {
         bestHeight = costIt->first;
         bestCost = costIt->second;
       }
+      --index;
     }
 
-    for (auto& prev : costs[i]) {
+    index = 0;
+    for (auto& prev : costs) {
       auto prevHeight = prev.first;
       auto prevCost = prev.second;
 
       // Short-circuit if cost is dominated
-      if (LONG_MAX == prevCost) {
+      if (!valid[index++]) {
         continue;
       }
 
@@ -75,7 +81,11 @@ void fillCosts(std::vector<std::map<int, long>>& costs, std::vector<Student> con
         nextCosts[prevHeight] = prevCost;
       }
     }
+
+    costs = nextCosts;
   }
+
+  return costs;
 }
 
 int main() {
@@ -83,24 +93,22 @@ int main() {
   int n;
   std::cin >> n;
 
-  // Create cost tables for every position in the track
-  std::vector<std::map<int, long>> costs(n);
-
-  // The cost table for the start position is known: { { Mason's height, 0 } }
+  // The costs for the start position is known: { { Mason's height, 0 } }
   int masonHeight;
   std::cin >> masonHeight;
-  costs[0][masonHeight] = 0;
+  std::map<int, long> costs;
+  costs[masonHeight] = 0;
 
   // Read the n - 1 students
   auto students = readStudents(n - 1);
 
-  // Fill costs based on the students data
-  fillCosts(costs, students);
+  // Calculate final costs based on the students data
+  costs = calculateCosts(costs, students);
 
   // Find the best cost of the goal position
   auto min = std::min_element(
-    costs[n - 1].begin(),
-    costs[n - 1].end(),
+    costs.begin(),
+    costs.end(),
     [](std::pair<int, long> const& a, std::pair<int, long> const& b) {
       return a.second < b.second;
     });
