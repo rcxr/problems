@@ -1,9 +1,9 @@
-// <link to the problem here>
+/ / <link to the problem here>
 
 #include "bits/stdc++.h"
 
 int main() {
-  long n;
+  int n;
   std::cin >> n;
 
   std::cout << n;
