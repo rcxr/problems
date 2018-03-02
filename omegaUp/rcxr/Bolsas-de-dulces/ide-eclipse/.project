@@ -16,6 +16,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>expected</name>
+			<type>2</type>
+			<locationURI>$%7BWORKSPACE_LOC%7D/expected</locationURI>
+		</link>
+		<link>
+			<name>in</name>
+			<type>2</type>
+			<locationURI>$%7BWORKSPACE_LOC%7D/in</locationURI>
+		</link>
+		<link>
 			<name>src</name>
 			<type>2</type>
 			<locationURI>$%7BWORKSPACE_LOC%7D/src/java</locationURI>
