@@ -4,7 +4,7 @@ build:
 	@echo "building..."
 	@tput sgr 0
 	@mkdir bin -p
-	g++ src/main.cpp -std=c++11 -o bin/main.exe
+	g++ src/cpp/main.cpp -std=c++11 -o bin/main.exe
 tests_cleanup:
 	@tput setaf 2
 	@echo "tests cleanup"
