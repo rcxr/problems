@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>main</name>
+	<name>ide-eclipse</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -18,13 +18,7 @@
 		<link>
 			<name>src</name>
 			<type>2</type>
-			<locationURI>SRC_LOC</locationURI>
+			<locationURI>$%7BWORKSPACE_LOC%7D/src/java</locationURI>
 		</link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>SRC_LOC</name>
-			<value>$%7BPARENT-1-WORKSPACE_LOC%7D/src/java</value>
-		</variable>
-	</variableList>
 </projectDescription>

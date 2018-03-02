@@ -16,6 +16,7 @@ class VentaParcial {
   int precioPorUnidad;
 }
 
+
 public class Main {
   // Calcula la venta total dada una lista de ventas parciales
   static int calcularVentaTotal(VentaParcial[] ventasParciales) {
@@ -27,7 +28,8 @@ public class Main {
       // 3.b.ii. Agregar venta parcial a la venta total
       resultado += ventaParcial.articulos * ventaParcial.precioPorUnidad;
     }
-    // 3.c. Una vez terminado el ciclo ya tienes el resultado del problema almacenado en tu variable venta total :)
+    // 3.c. Una vez terminado el ciclo ya tienes el resultado del problema almacenado en tu variable
+    // venta total :)
     return resultado;
   }
 
