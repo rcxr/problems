@@ -11,9 +11,9 @@ struct VentaParcial {
   VentaParcial(int articulos, int precioPorUnidad)
     : articulos(articulos)
     , precioPorUnidad(precioPorUnidad) {}
-  // Cantidad de artículos vendidos
+  // Cantidad de articulos vendidos
   int articulos;
-  // Precio de cada artículo
+  // Precio de cada articulo
   int precioPorUnidad;
 };
 
@@ -21,9 +21,9 @@ struct VentaParcial {
 int calcularVentaTotal(vector<VentaParcial> const& ventasParciales) {
   // 3.a. Empezar a acumular la venta total en una variable (inicializarla en 0)
   int resultado = 0;
-  // 3.b. Hacer un ciclo del tamaño de las ventas parciales
+  // 3.b. Hacer un ciclo del tamanio de las ventas parciales
   for (auto ventaParcial : ventasParciales) {
-    // 3.b.i. Calcular venta parcial (cantidad de artículos vendidos x precio de cada artículo)
+    // 3.b.i. Calcular venta parcial (cantidad de articulos vendidos x precio de cada articulo)
     // 3.b.ii. Agregar venta parcial a la venta total
     resultado += ventaParcial.articulos * ventaParcial.precioPorUnidad;
   }
@@ -32,7 +32,7 @@ int calcularVentaTotal(vector<VentaParcial> const& ventasParciales) {
 }
 
 int main() {
-  // 1. Leer número de ventas parciales (N) para saber el tamaño de ventas parciales
+  // 1. Leer numero de ventas parciales (N) para saber el tamanio de ventas parciales
   int n;
   cin >> n;
 
