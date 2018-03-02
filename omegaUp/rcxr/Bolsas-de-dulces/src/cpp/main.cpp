@@ -11,9 +11,9 @@ struct VentaParcial {
   VentaParcial(int articulos, int precioPorUnidad)
     : articulos(articulos)
     , precioPorUnidad(precioPorUnidad) {}
-  // Cantidad de articulos vendidos
+  // Cantidad de artículos vendidos
   int articulos;
-  // Precio de cada articulo
+  // Precio de cada artículo
   int precioPorUnidad;
 };
 
