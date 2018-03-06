@@ -1,52 +1,40 @@
 // http://codeforces.com/contest/931/problem/D
 
 #include "bits/stdc++.h"
+#include <unordered_set>
+
+void copyLogs(std::unordered_set<int>& nextLog, std::unordered_set<int>& log) {
+  for (auto& t : log) {
+    auto temp = nextLog.find(t + 1);
+    if (nextLog.end() == temp) {
+      nextLog.insert(t + 1);
+    } else {
+      nextLog.erase(temp);
+    }
+  }
+}
 
 int main() {
   int n;
   std::cin >> n;
 
-  std::vector<int> next(n);
-  std::map<int, bool> apples;
-  apples[0] = true;
+  std::vector<int> nextBranch(n);
   for (int i = 1; i < n; ++i) {
-    int t;
-    std::cin >> t;
-    next[i] = t - 1;
-    apples[i] = true;
+    int temp;
+    std::cin >> temp;
+    nextBranch[i] = temp - 1;
   }
 
-  std::vector<int> distance;
-  distance.push_back(1);
-  int maxDistance = INT_MIN;
-  for (int i = 1; i < n; ++i) {
-    int d = distance[next[i]] + 1;
-    maxDistance = maxDistance < d ? d : maxDistance;
-    distance.push_back(d);
+  std::vector<std::unordered_set<int>> logs(n);
+  for (auto& log : logs) {
+    log.insert(0);
   }
 
-  int appleCount = 0;
-  for (int i = 0; i < maxDistance; ++i) {
-    auto temp1 = apples.find(0);
-    if (apples.end() != temp1 && temp1->second) {
-      ++appleCount;
-    }
-
-    std::map<int, bool> nextApples;
-    for (auto& apple : apples) {
-      if (apple.first && apple.second) {
-        int nextApple = next[apple.first];
-        auto temp = nextApples.find(nextApple);
-        if (nextApples.end() == temp) {
-          nextApples[nextApple] = true;
-        } else {
-          nextApples[nextApple] = !temp->second;
-        }
-      }
-    }
-
-    apples = nextApples;
+  for (int i = n - 1; 0 < i; --i) {
+    copyLogs(logs[nextBranch[i]], logs[i]);
   }
-  std::cout << appleCount;
+
+  std::cout << logs[0].size();
+
   return 0;
 }

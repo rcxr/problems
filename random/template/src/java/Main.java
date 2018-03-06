@@ -1,4 +1,4 @@
-// https://omegaup.com/arena/problem/Bolsas-de-dulces
+/ / <link to the problem here>
 
 import java.util.Scanner;
 
