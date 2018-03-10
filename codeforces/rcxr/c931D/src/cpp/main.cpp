@@ -25,7 +25,7 @@ int main() {
     // The current branch will have its apples move to this other branch (which we are calling next branch)
     int nextBranch = temp - 1;
     // The depth of this branch will be 1 more than the next branch
-    depths[i] = depths[nextBranch + 1;
+    depths[i] = depths[nextBranch] + 1;
     // Increase the counter for this depth
     if (depthCounts.end() == depthCounts.find(depths[i])) {
       depthCounts[depths[i]] = 1;
