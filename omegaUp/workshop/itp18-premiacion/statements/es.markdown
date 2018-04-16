@@ -1,4 +1,4 @@
-¡Acaba de terminar el 1er Concurso de Programación del Instituto Tecnológico de Pachuca y los resultados ya están listos!
+¡Acaba de terminar el **1er Concurso de Programación del Instituto Tecnológico de Pachuca** y los resultados ya están listos!
 
 Sin embargo por ser la primer vez que se hace el concurso los resultados salieron en desorden. En vez de salir los nombres del primer lugar al último lugar, los resultados salieron de la siguiente forma:
 
@@ -18,14 +18,14 @@ Sin embargo por ser la primer vez que se hace el concurso los resultados saliero
    - $C$ representa el nombre del concursante (una sola palabra)
    - $P$ el nombre de quien quedó **inmediatamente antes** en la tabla de posiciones, o `null` si el concursante quedó en primer lugar
 
+## Notas
+
+ - No hay concursantes con nombres repetidos
+ - La entrada siempre generará una lista válida, no hay necesidad de validar la entrada
+
 # Output
 
 Los nombres de los $N$ concursantes del primer lugar al último separados por espacios.
-
-# Notas
-
-- No hay concursantes con nombres repetidos
-- La entrada siempre generará una lista completa, no hay necesidad de validar la entrada
 
 # Ejemplos
 
