@@ -1,0 +1,525 @@
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp: In function 'int main()':
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:15: error: no match for 'operator>>' (operand types are 'std::ostream {aka std::basic_ostream<char>}' and 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}')
+     std::cout >> p >> ' ';
+     ~~~~~~~~~~^~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:3192:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::piecewise_linear_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:3192:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2976:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::piecewise_constant_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2976:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2761:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::discrete_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2761:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2299:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::student_t_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2299:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2225:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::fisher_f_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2225:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2060:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::chi_squared_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2060:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1988:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::lognormal_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1988:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1693:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::binomial_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1693:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1425:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::poisson_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1425:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1220:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::negative_binomial_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1220:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:856:5: note: candidate: template<class _RandomNumberEngine, unsigned int __k, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::shuffle_order_engine<_RandomNumberEngine, __k>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:856:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:725:5: note: candidate: template<class _RandomNumberEngine, unsigned int __p, unsigned int __r, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::discard_block_engine<_RandomNumberEngine, __p, __r>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:725:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:657:5: note: candidate: template<class _UIntType, unsigned int __w, unsigned int __s, unsigned int __r, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::subtract_with_carry_engine<_UIntType, __w, __s, __r>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:657:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:178:5: note: candidate: template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::linear_congruential_engine<_UIntType, __a, __c, __m>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:178:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2622:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::extreme_value_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2622:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2546:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::weibull_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2546:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1754:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::exponential_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1754:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2469:5: note: candidate: template<class _RealType1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::gamma_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2469:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1104:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::geometric_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1104:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1925:5: note: candidate: template<class _RealType1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::normal_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:1925:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:49:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.h:3594:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bernoulli_distribution&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.h:3594:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2147:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::cauchy_distribution<_RealType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:2147:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:960:5: note: candidate: template<class _RealType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::uniform_real_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:960:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:898:5: note: candidate: template<class _IntType, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::uniform_int_distribution<_IntType>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:898:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\random:51:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:106,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:505:5: note: candidate: template<class _UIntType1, unsigned int __w1, unsigned int __n1, unsigned int __m1, unsigned int __r1, _UIntType1 __a1, unsigned int __u1, _UIntType1 __d1, unsigned int __s1, _UIntType1 __b1, unsigned int __t1, _UIntType1 __c1, unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\random.tcc:505:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::valarray<_Tp>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'const std::valarray<_Tp>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_right, _Tp>::result_type> std::operator>>(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(>>, __shift_right)
+ ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:1176:1: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'const std::valarray<_Tp>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:587:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:587:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:587:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:587:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\valarray:587:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:94,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note: candidate: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__shift_right, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__shift_right, typename _Dom1::value_type>::result_type> std::operator>>(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(>>, __shift_right)
+     ^
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\valarray_after.h:411:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'const std::_Expr<_Dom1, typename _Dom1::value_type>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:418:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_time<_CharT>)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:418:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:264:5: note: candidate: template<class _CharT, class _Traits, class _MoneyT> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Get_money<_MoneyT>)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:264:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:230:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:230:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:200:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:200:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:170:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:170:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:132:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:132:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:101:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:101:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:71:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:71:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iomanip:71:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:65:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bitset:1462:5: note: candidate: template<class _CharT, class _Traits, unsigned int _Nb> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::bitset<_Nb>&)
+     operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bitset:1462:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39:0,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:493:5: note: candidate: template<class _Tp, class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::complex<_Tp>&)
+     operator>>(basic_istream<_CharT, _Traits>& __is, complex<_Tp>& __x)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:493:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:924:5: note: candidate: template<class _CharT, class _Traits, class _Tp> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&&, _Tp&)
+     operator>>(basic_istream<_CharT, _Traits>&& __is, _Tp& __x)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:924:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:808:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:803:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:761:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:756:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:934:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc:923:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc:923:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:934:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc:955:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc:955:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:53:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ccomplex:39,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\bits/stdc++.h:52,
+                 from D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:3:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc:1437:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc:1437:5: note:   template argument deduction/substitution failed:
+D:\repo\problems\omegaUp\rcxr\itp18-premiacion\src\cpp\main.cpp:21:18: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+     std::cout >> p >> ' ';
+                  ^
