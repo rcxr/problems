@@ -6,13 +6,14 @@ Sin embargo por ser la primer vez que se hace el concurso los resultados saliero
 
 # Input
 
- - Un entero, $N$ ($1 \le N \le 100$), indicando el número de concursantes
+ - Un entero, $N$, indicando el número de concursantes
  - $N$ renglones. Cada renglón seguirá el formato `C P` donde:
    - $C$ representa el nombre del concursante (una sola palabra)
    - $P$ el nombre de quien quedó **un lugar arriba** en la tabla de posiciones, o `null` si el concursante quedó en primer lugar
 
 ## Notas
 
+ - $1 \le N \le 100$
  - No hay concursantes con nombres repetidos
  - La entrada siempre generará una lista válida, no hay necesidad de validar la entrada
 

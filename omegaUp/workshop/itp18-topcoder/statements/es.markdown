@@ -10,10 +10,13 @@ Con esta información y sabiendo que quedan **3 horas** de concurso escribe un p
 
 # Input
 
- - Un entero, $N$ ($1 \le N \le 16$), indicando la cantidad de problemas
+ - Un entero, $N$, indicando la cantidad de problemas
  - $N$ renglones con datos sobre los problemas del concurso. Cada renglón seguirá el formato `M P` donde:
    - $M$ cantidad de minutos que te tomará resolver el problema
    - $P$ cantidad de puntos que obtienes por resolver el problema
+
+## Notas
+ - $1 \le N \le 16$
  - $1 \le M, P \le 1000$
 
 # Output

@@ -18,12 +18,16 @@ Tu tarea es decir si los organizadores compraron suficientes pastes para satisfa
    - $M$ cantidad de pastes de mole verde
    - $H$ cantidad de pastes hawaianos
    - $Z$ cantidad de pastes de zarzamora
- - Un entero, $N$ ($1 \le N \le 100$), indicando el número de concursantes
+ - Un entero, $N$, indicando el número de concursantes
  - $N$ renglones. Cada renglón seguirá el formato `p m h z` donde:
    - $p$ pastes de papa con carne que originalmente pidió el concursante
    - $m$ pastes de mole verde que originalmente pidió el concursante
    - $h$ pastes hawaianos que originalmente pidió el concursante
    - $z$ pastes de zarzamora que originalmente pidió el concursante
+
+## Notas
+
+ - $1 \le N \le 100$
  - $0 \le P, M, H, Z, p, m, h, z \le 100$
 
 # Output
