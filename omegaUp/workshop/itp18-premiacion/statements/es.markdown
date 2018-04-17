@@ -1,22 +1,15 @@
 ¡Acaba de terminar el **1er Concurso de Programación del Instituto Tecnológico de Pachuca** y los resultados ya están listos!
 
-Sin embargo por ser la primer vez que se hace el concurso los resultados salieron en desorden. En vez de salir los nombres del primer lugar al último lugar, los resultados salieron de la siguiente forma:
+Sin embargo por ser la primer vez que se hace el concurso los resultados salieron en desorden. En vez de salir los nombres del primer lugar al último lugar, los resultados salieron revueltos.
 
- - $N$ renglones
- - Cada renglón tiene 2 palabras
- - Primer palabra es el
-   nombre de un concursante
- - Segunda palabra es el nombre de quien quedó
-   **inmediatamente antes** en la tabla de posiciones, o `null` si el concursante quedó en primer lugar
-
-¡Afortunadamente tú nos puedes ayudar! Lee la entrada e imprime la tabla de posiciones en orden.
+¡Afortunadamente tú nos puedes ayudar! Lee la entrada, reconstruye la tabla de posiciones e imprímela en orden.
 
 # Input
 
  - Un entero, $N$ ($1 \le N \le 100$), indicando el número de concursantes
  - $N$ renglones. Cada renglón seguirá el formato `C P` donde:
    - $C$ representa el nombre del concursante (una sola palabra)
-   - $P$ el nombre de quien quedó **inmediatamente antes** en la tabla de posiciones, o `null` si el concursante quedó en primer lugar
+   - $P$ el nombre de quien quedó **un lugar arriba** en la tabla de posiciones, o `null` si el concursante quedó en primer lugar
 
 ## Notas
 
