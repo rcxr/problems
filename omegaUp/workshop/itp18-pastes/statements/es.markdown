@@ -32,14 +32,14 @@ Tu tarea es decir si los organizadores compraron suficientes pastes para satisfa
 
 # Output
 
- - Imprime `#epicfail` si los organizadores no compraron suficientes pastes para satisfacer lo que los concursantes pidieron originalmente.
+ - Imprime `#epicfail` si los organizadores no compraron suficientes pastes para satisfacer lo que los concursantes pidieron originalmente
  - Imprime `#win` si todos van a poder comer lo que pidieron originalmente (**no importa que sobren pastes**)
 
 # Ejemplos
 
 ||input
 3 3 3 3
-3
+2
 0 2 1 0
 0 1 0 2
 ||output
