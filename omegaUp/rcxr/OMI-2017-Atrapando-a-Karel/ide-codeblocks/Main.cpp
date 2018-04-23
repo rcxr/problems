@@ -164,7 +164,7 @@ int ponMuro(int f, int c, int d) {
     return dir;
 }
 
-void main() {
+int main() {
 
     scanf("%d", &n);
     srand (n * 87776810);
@@ -176,7 +176,7 @@ void main() {
 
     printf("El mundo es de %dx%d \n", n, n);
     printf("karel esta en %d %d\n",fila_karel,columna_karel);
-    
+
     atrapando(n);
 
     printf("No has encerrado a Karel");
