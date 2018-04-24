@@ -7,14 +7,13 @@ import org.junit.runners.Parameterized.Parameters;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 @RunWith(Parameterized.class)
 public class MainTest {
-  final static int SUPPORTED_TEST_CASES = 15;
+  final static int SUPPORTED_TEST_CASES = 3;
   
   @Parameters
   public static Collection<String> getParameters() {
