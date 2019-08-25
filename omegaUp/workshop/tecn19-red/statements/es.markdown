@@ -1,4 +1,4 @@
-En el Tecnológico Nacional de México los profesores interesados por optimizar recursos para hacer más y mejores concursos de programación han creado una red de mensajería interna en la cual intercambian material didáctico, libros y equipo tecnológico durante los viajes que hacen entre diferentes ciudades por conferencias y talleres.
+En el Tecnológico Nacional de México los profesores interesados por optimizar recursos para hacer más y mejores concursos de programación han creado una red de mensajería interna para intercambiar material, libros y equipo tecnológico durante los viajes que hacen entre diferentes ciudades por conferencias y talleres.
 
 En esta red cada profesor se registra listando las ciudades por las cuales viaja frecuentemente. Posteriormente cualquier profesor puede pedirle a miembros de la red que lleven un paquete en su siguiente viaje a otra ciudad en la que el paquete es entregado ya sea a su destinatario final o a otro profesor de la red.
 
@@ -29,7 +29,7 @@ Se te da una ciudad origen y una ciudad destino y en dado caso de ser posible us
  - Un entero, $N$, indicando la cantidad de profesores registrados
  - $N$ renglones representando a los profesores registrados en la red. Cada renglón seguirá el formato `M CIUDAD_1 CIUDAD_2 ... CIUDAD_M` donde:
    - $M$ es la cantidad de ciudades que el profesor frecuenta separadas por un espacio
-   - `CIUDAD_1`, `CIUDAD_2`, ..., `CIUDAD_M` son los nombres de las $M$ ciudades
+   - `CIUDAD_1 CIUDAD_2 … CIUDAD_M` son los nombres de las $M$ ciudades
  - Una cadena $ORIGEN$ que representa el nombre de la ciudad origen
  - Una cadena $DESTINO$ que representa el nombre de la ciudad destino
 
@@ -37,7 +37,9 @@ Se te da una ciudad origen y una ciudad destino y en dado caso de ser posible us
 
  - $1 \le N \le 100$
  - $1 \le M \le 100$
- - Los nombres de las ciudades no tienen espacios (son una sola palabra) y usan sólo letras minúsculas y dígitos ([a-z0-9]).
+ - Los nombres de las ciudades son de máximo 16 caracteres
+ - Los nombres de las ciudades sólo usan caracteres de palabra ASCII (es decir sin acentos, sin ñ y pueden incluir números)
+ - Los nombres de las ciudades no tienen espacios (son una sola palabra)
 
 # Output
 
