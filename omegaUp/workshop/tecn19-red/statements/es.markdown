@@ -29,7 +29,7 @@ Se te da una ciudad origen y una ciudad destino y en dado caso de ser posible us
  - Un entero, $N$, indicando la cantidad de profesores registrados
  - $N$ renglones representando a los profesores registrados en la red. Cada renglón seguirá el formato `M CIUDAD_1 CIUDAD_2 ... CIUDAD_M` donde:
    - $M$ es la cantidad de ciudades que el profesor frecuenta separadas por un espacio
-   - `CIUDAD_1 CIUDAD_2 … CIUDAD_M` son los nombres de las $M$ ciudades
+   - `CIUDAD_1 CIUDAD_2 ... CIUDAD_M` son los nombres de las $M$ ciudades
  - Una cadena $ORIGEN$ que representa el nombre de la ciudad origen
  - Una cadena $DESTINO$ que representa el nombre de la ciudad destino
 
