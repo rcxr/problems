@@ -7,20 +7,20 @@ Sólo queda la parte más divertida de este gran enigma: escribe un programa que
 # Input
 
  - Un entero, $N$, indicando el número de renglones
- - $N$ renglones. Cada renglón representa una relación de un hijo o hija con un padre o madre, y seguirá el formato `A B` donde:
-   - $A$ es el nombre del hijo o hija (una sola palabra)
-   - $B$ es el nombre del padre o madre (una sola palabra)
+ - $N$ renglones. Cada renglón representa una relación de una hija o hijo con una madre o padre, y seguirá el formato `A B` donde:
+   - $A$ es el nombre de la hija o hijo (una sola palabra)
+   - $B$ es el nombre de la madre o padre (una sola palabra)
 
 ## Notas
 
- - $1 \le N \le 1000$
+ - $1 \le N \le 1200$
  - No hay familiares con nombres repetidos
- - Se garantiza que todos los familiares están conectados de alguna forma
+ - En la familia ninguna pareja de padres tiene antepasados en común. Es decir, no existe ninguna pareja de padres que tuvieran el mismo abuelo, o tatarabuelo, o bisabuelo, etc.
 
 # Output
 
 El nombre del familiar con más nietos en la familia.
-En dado caso de empate listar los familiares en orden alfabético separados por un espacio.
+En dado caso de empate listar los familiares empatados en orden alfabético separados por un espacio.
 
 # Ejemplos
 
@@ -44,7 +44,7 @@ TiaTere AbueloTito
 PrimaVera TiaTere
 AbueloTito BisabuelaTita
 ||output
-AbueloTito
+AbueloTito BisabuelaTita
 ||description
-La respuesta es la misma que en el caso pasado porque a pesar de que BisabuelaTita tiene más descendencia, sólo tiene una nieta (MamaLinda)
+AbueloTito sigue teniendo 2 nietos como en el ejemplo pasado; exáctamente los mismos que BisabuelaTita, la nueva integrante del árbol familiar. BisabuelaTita es abuela de MamaLinda y TiaTere.
 ||end
