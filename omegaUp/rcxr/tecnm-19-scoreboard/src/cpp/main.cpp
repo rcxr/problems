@@ -1,6 +1,8 @@
 // https://omegaup.com/arena/problem/tecnm-19-scoreboard
 
 #include "bits/stdc++.h"
+#include <unordered_map>
+#include <unordered_set>
 
 int main() {
   int n;
