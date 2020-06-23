@@ -1,0 +1,10 @@
+7
+4
+abcd
+efgh
+ijkl
+mnop
+qrst
+uvwx
+yz :
+Friends

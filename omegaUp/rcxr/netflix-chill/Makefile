@@ -27,6 +27,14 @@ tests: clean build
 	@tput sgr 0
 	@mkdir out logs -p
 	bin/main.exe < in/input00.txt > out/output00.txt
+	bin/main.exe < in/input01.txt > out/output01.txt
+	bin/main.exe < in/input02.txt > out/output02.txt
+	bin/main.exe < in/input03.txt > out/output03.txt
+	bin/main.exe < in/input04.txt > out/output04.txt
+	bin/main.exe < in/input05.txt > out/output05.txt
+	bin/main.exe < in/input06.txt > out/output06.txt
+	bin/main.exe < in/input07.txt > out/output07.txt
+	bin/main.exe < in/input08.txt > out/output08.txt
 	@tput setaf 2
 	@echo "comparing expected with actual output..."
 	@tput sgr 0
