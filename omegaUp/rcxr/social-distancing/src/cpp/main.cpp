@@ -12,17 +12,21 @@ public:
   }
 
   bool isSafe(const Marchante *c) const {
-    int dx = c->p[X] - p[X];
-    int dy = c->p[Y] - p[Y];
+    int dx = c->x() - x();
+    int dy = c->y() - y();
     return dx * dx + dy * dy > SAFE_DISTANCE;
   }
+
+  int x() const { return p[X]; }
+  int y() const { return p[Y]; }
+  int getGroupId() const { return groupId; }
 
 private:
   const int id;
   const std::array<int, 2> p;
   int groupId;
-  std::set<int> neighbors0;
-  std::set<int> neighbors1;
+  std::set<int> neighborsX;
+  std::set<int> neighborsY;
 };
 
 class Mercado {
@@ -43,14 +47,35 @@ public:
   bool isSafe() {
     populateNeighbors(X);
     populateNeighbors(Y);
+    checkNeighbors();
+    normalizeGroups();
+
+    std::unordered_set<int> candidateGroups;
+    for (auto m : marchantes) {
+      if (m->x() <= 2) {
+        candidateGroups.insert(m->getGroupId());
+      }
+    }
+
+    for (auto m : marchantes) {
+      if (m->x() >= w - 2) {
+        if (candidateGroups.find(m->getGroupId()) != candidateGroups.end()) {
+          return false;
+        }
+      }
+    }
+
     return true;
   }
+
 private:
   std::vector<Marchante *> marchantes;
   const int w;
   const int l;
 
   void populateNeighbors(int dimension) {}
+  void checkNeighbors() {}
+  void normalizeGroups() {}
 };
 
 int main() {
