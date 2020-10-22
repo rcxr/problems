@@ -1,126 +1,82 @@
 // https://omegaup.com/arena/problem/social-distancing
-
 #include "bits/stdc++.h"
-#include <array>
-
-#define X 0
-#define Y 1
 #define SAFE_DISTANCE 16
 
 class Marchante {
 public:
-  Marchante(int id, int x, int y) : id(id), groupId(id), p({x, y}) {
-  }
+  Marchante(int id, int x, int y) : id(id), x(x), y(y), visited(false) {}
 
-  static void populateNeighbors(std::vector<Marchante *> marchantes, int d) {
+  static void calculateNeighbors(std::vector<Marchante *> marchantes) {
     std::vector<std::pair<int, int>> boundaries;
     for (auto m : marchantes) {
-      boundaries.push_back(std::make_pair((m->p[d] - 2) * 2, m->id));
-      boundaries.push_back(std::make_pair((m->p[d] + 2) * 2 + 1, m->id));
+      boundaries.push_back(std::make_pair((m->x - 2) * 2, m->id));
+      boundaries.push_back(std::make_pair((m->x + 2) * 2 + 1, m->id));
     }
 
     std::sort(boundaries.begin(), boundaries.end());
 
-    std::set<int> active;
+    std::set<int> candidates;
     for (const auto &b : boundaries) {
       if (b.first % 2 == 0) {
-        for (auto a : active) {
-          marchantes[a]->neighbors[d].insert(b.second);
+        Marchante *m1 = marchantes[b.second];
+        for (auto c : candidates) {
+          Marchante *m2 = marchantes[c];
+          if (!m1->touches(m2)) {
+            m1->neighbors.insert(m2);
+            m2->neighbors.insert(m1);
+          }
         }
-        marchantes[b.second]->neighbors[d] = active;
-        active.insert(b.second);
+        candidates.insert(b.second);
       } else {
-        active.erase(b.second);
+        candidates.erase(b.second);
       }
-    }
-  }
-
-  static void checkNeighbors(std::vector<Marchante *> marchantes) {
-    for (auto m : marchantes) {
-      std::set<int> candidates;
-      set_intersection(
-        m->neighborsX().begin(),
-        m->neighborsX().end(),
-        m->neighborsY().begin(),
-        m->neighborsY().end(),
-        std::inserter(candidates, candidates.begin()));
-
-      for (auto c : candidates) {
-        Marchante *n = marchantes[c];
-        if (!m->isSafe(n)) {
-          int groupId = std::min(m->groupId, n->groupId);
-          m->groupId = groupId;
-          n->groupId = groupId;
-        }
-      }
-    }
-  }
-
-  static void normalizeGroups(std::vector<Marchante *> marchantes) {
-    // TODO: optimize with DP.
-    for (auto m : marchantes) {
-      m->groupId = findLeadGroup(marchantes, m->groupId);
     }
   }
 
   static bool areSafe(std::vector<Marchante *> marchantes, int w) {
-    std::set<int> candidateGroups;
+    std::vector<Marchante *> risky;
     for (auto m : marchantes) {
-      if (m->x() <= 2) {
-        candidateGroups.insert(m->groupId);
-      }
+      if (m->x <= 2) { risky.push_back(m); }
     }
 
-    for (auto m : marchantes) {
-      if (m->x() >= w - 2) {
-        if (candidateGroups.find(m->groupId) != candidateGroups.end()) {
-          return false;
-        }
-      }
+    for (auto r : risky) {
+      if (!r->isSafe(w)) { return false; }
     }
 
     return true;
   }
 
 private:
-  const int id;
-  int groupId;
+  const int id, x, y;
+  bool visited;
+  std::set<Marchante *> neighbors;
 
-  const std::array<int, 2> p;
-  std::array<std::set<int>, 2> neighbors;
+  bool isSafe(int w) {
+    if (visited) { return true; }
+    if (x >= w - 2) { return false; }
 
-  const std::set<int> &neighborsX() const {
-    return neighbors[X];
-  }
-  const std::set<int> &neighborsY() const {
-    return neighbors[Y];
-  }
+    visited = true;
 
-  int x() const { return p[X]; }
-  int y() const { return p[Y]; }
-
-  bool isSafe(const Marchante *c) const {
-    int dx = c->x() - x();
-    int dy = c->y() - y();
-    return dx * dx + dy * dy > SAFE_DISTANCE;
-  }
-
-  static int findLeadGroup(std::vector<Marchante *> marchantes, int groupId) {
-    while (groupId != marchantes[groupId]->groupId) {
-      groupId = marchantes[groupId]->groupId;
+    for (auto n : neighbors) {
+      if (!n->isSafe(w)) { return false; }
     }
-    return groupId;
+
+    return true;
+  }
+
+  bool touches(const Marchante *c) const {
+    int dx = c->x - x;
+    int dy = c->y - y;
+    return dx * dx + dy * dy > SAFE_DISTANCE;
   }
 };
 
 class Mercado {
 public:
-  Mercado(int w, int l) : w(w), l(l) {}
+  Mercado(int w) : w(w) {}
 
   ~Mercado() {
-    for(auto m : marchantes) {
-      delete m;
-    }
+    for(auto m : marchantes) { delete m; }
     marchantes.clear();
   }
 
@@ -129,17 +85,13 @@ public:
   }
 
   bool isSafe() {
-    Marchante::populateNeighbors(marchantes, X);
-    Marchante::populateNeighbors(marchantes, Y);
-    Marchante::checkNeighbors(marchantes);
-    Marchante::normalizeGroups(marchantes);
+    Marchante::calculateNeighbors(marchantes);
     return Marchante::areSafe(marchantes, w);
   }
 
 private:
-  std::vector<Marchante *> marchantes;
   const int w;
-  const int l;
+  std::vector<Marchante *> marchantes;
 };
 
 int main() {
@@ -150,8 +102,7 @@ int main() {
     int m, w, l;
     std::cin >> m >> w >> l;
 
-    Mercado mercado(w, l);
-
+    Mercado mercado(w);
     for (int j = 0; j < m; ++j) {
       int x, y;
       std::cin >> x >> y;
