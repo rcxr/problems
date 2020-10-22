@@ -30,6 +30,7 @@ tests: clean build
 	bin/main.exe < in/input01.txt > out/output01.txt
 	bin/main.exe < in/input02.txt > out/output02.txt
 	bin/main.exe < in/input03.txt > out/output03.txt
+	bin/main.exe < in/input03b.txt > out/output03b.txt
 	bin/main.exe < in/input04.txt > out/output04.txt
 	bin/main.exe < in/input05.txt > out/output05.txt
 	bin/main.exe < in/input06.txt > out/output06.txt
@@ -37,7 +38,9 @@ tests: clean build
 	bin/main.exe < in/input08.txt > out/output08.txt
 	bin/main.exe < in/input09.txt > out/output09.txt
 	bin/main.exe < in/input10.txt > out/output10.txt
+	bin/main.exe < in/input10b.txt > out/output10b.txt
 	bin/main.exe < in/random_test12.in > out/random_test12.out
+	bin/main.exe < in/random_test12b.in > out/random_test12b.out
 	@tput setaf 2
 	@echo "comparing expected with actual output..."
 	@tput sgr 0

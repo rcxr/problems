@@ -1,6 +1,7 @@
 // https://omegaup.com/arena/problem/social-distancing
 
 #include "bits/stdc++.h"
+#include <array>
 
 #define X 0
 #define Y 1
