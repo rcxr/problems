@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 @RunWith(Parameterized.class)
 public class MainTest {
-  final static int SUPPORTED_TEST_CASES = 26;
+  final static int SUPPORTED_TEST_CASES = 30;
   
   @Parameters
   public static Collection<String> getParameters() {
