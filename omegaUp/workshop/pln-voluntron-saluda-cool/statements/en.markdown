@@ -1,18 +1,18 @@
-Beep. Beep. Soy VOLUNTRON-3000. Ya sé saludar usando tu nombre completo. Pero me dicen que nadie saluda así. Beep.
+Beep. Beep. I’m VOLUNTRON-3000. I already know how to say hello using your full name. But I was told that nobody greets like that. Beep.
 
-Haré un segundo intento. Dame tu nombre e intentaré un saludo COOL 😎 Beep.
+I'll try again. Tell me your name and I'll try a COOL greeting 😎 Beep.
 
-#Entrada
+# Input
 
-- Nombre (en una sola línea)
-- Primer apellido (en una sola línea)
-- Segundo apellido (en una sola línea)
+- Name (in a single line)
+- First last name (in a single line)
+- Second last name (in a single line)
 
-#Salida
+# Output
 
-Forma un "nombre cool" con las primeras letras de cada renglón juntas y en mayúsculas.
+Make a "cool name" with the first letters of each line together and in capital letters.
 
-Imprime la frase `Beep. ¡<nombre cool>! Qué milanesa que te dejas bisteces, yo pensé que ya te habías morongas 😎 Beep.`
+Print the phrase `Beep. ¡<cool name>! Qué milanesa que te dejas bisteces, yo pensé que ya te habías morongas 😎 Beep.`
 
 #Ejemplos
 
