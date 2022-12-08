@@ -1,38 +1,39 @@
-Beep. Beep. Soy VOLUNTRON-4000. Una versión mejorada de mí mismo.
+Beep. Beep. I'm VOLUNTRON-4000. An improved version of myself.
 
-Ahora soy una máquina más rápida, más ágil, ya se saludar, y soy cool.
+Now I'm faster, more agile, I know how to say "hello", and I'm really COOL.
 
-Sin embargo... Beep. La última mejora me dio Transtorno Obsesivo Compulsivo (TOC) y ahora quiero ordenar todo lo que veo. Beep.
+However... Beep. That last update made me want to order EVERYTHING. Beep.
 
-Voy a recibir un número, una palabra y finalmente un valor booleano. Estos valores no están ordenadas en orden alfabético. ¡Esto no puede ser!
+I'm going to receive a number, a boolean, and a string of characters. These values are not in alphabetical order by their datatype (in Spanish). This cannot be!
 
-Ayúdame a ordenarlas e imprimirlas en el siguiente orden: booleano, cadena, número.
+Help me sort these values according to their datatype alphabetical order (in Spanish): booleano, cadena, número.
 
-#Entrada
+#Input
 
-- El primer valor tendrá un número entero (usa `scanner.nextInt()`)
-- El segundo valor tendrá una palabra (usa `scanner.next()`)
-- El tercer y último valor tendrá un booleano (usa `scanner.nextBoolean()`)
+You will receive three values separated by a space ` `:
 
-#Salida
+- First value will be a Number (use `scanner.nextInt()`)
+- Second value will be a Boolean (use `scanner.nextBoolean()`)
+- Third value will be a String (use `scanner.next()`)
 
-Imprime primero el booleano (representado por X), después la cadena (representada por Y), y por último el número (representado por Z). Sigue el siguiente formato:
+#Output
+
+Print the values in the following order: Boolean (represented by X), then the String (represented by Y), and, lastly, the number (represented by Z). Use the following format:
 
 ```
 Booleano -> X
 Cadena -> Y
 Número -> Z
-
 ```
 
-# Ejemplos
+# Examples
 
 ||input
-123 agua True
+123 True agua
 ||output
 Booleano -> True
 Cadena -> agua
 Número -> 123
 ||description
-This is the result after replacing X, Y and Z.
+This is the resulting output after using the values that you read.
 ||end
