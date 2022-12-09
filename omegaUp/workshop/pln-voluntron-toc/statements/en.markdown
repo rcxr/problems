@@ -29,9 +29,9 @@ Número -> Z
 # Examples
 
 ||input
-123 True agua
+123 true agua
 ||output
-Booleano -> True
+Booleano -> true
 Cadena -> agua
 Número -> 123
 ||description
