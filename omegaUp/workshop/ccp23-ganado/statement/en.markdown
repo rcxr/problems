@@ -1,6 +1,6 @@
 # Description
 
-There are $M$ pastures, owned by rancher $r_1, r_2, … r_M$, respectively. Given a chart showing how the herds are split up on each pasture. Please find which owner has the maximum number of animals in total, and the type of animal that has the maximum number of members across all pastures. If there's a tie for the owner, print the first owner's name (i.e. the owner that is on the highest row of the chart). If there's a tie for the type of animal, print the first type of animal (i.e. the type of animal that is the left-most in the chart).
+Existen $M$ terrenos pertenecientes a $M$ ganaderas y ganaderos $r_1, r_2, … r_M$. Se nos da una tabla con los datos showing how the herds are split up on each pasture. Please find which owner has the maximum number of animals in total, and the type of animal that has the maximum number of members across all pastures. If there's a tie for the owner, print the first owner's name (i.e. the owner that is on the highest row of the chart). If there's a tie for the type of animal, print the first type of animal (i.e. the type of animal that is the left-most in the chart).
 
 # Input
 
